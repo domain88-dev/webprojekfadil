@@ -1,0 +1,306 @@
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+ /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: rgba(10, 15, 44, 0.95);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .logo:hover {
+      background-color: white;
+      color: #0a0f2c;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #ff0000;
+    }
+
+    /* Menu Toggle Button (untuk mobile) */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Perbaiki gap dan ukuran font */
+  .nav-links a {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero-blog {
+  position: relative;
+  background: url('https://fineproxy.org/wp-content/uploads/2023/05/Internet-Service-Provider-ISP.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-blog .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Lapisan hitam transparan */
+  z-index: 1;
+}
+
+.hero-blog .hero-text-box {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+
+/* BLOG SECTION */
+.after-hero {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-card h3 {
+  font-size: 20px;
+  color: #001e5a;
+  padding: 15px 20px 0;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: #444;
+  padding: 10px 20px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 10px 20px 20px;
+  padding: 10px 15px;
+  background-color: #001e5a;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #003999;
+}
+
+    /* foot contact us */
+    .footer {
+      background-color: #001e5a;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer h2 {
+      margin-bottom: 30px;
+    }
+
+    .footer form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+
+    .footer .form-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer input,
+    .footer textarea {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+    }
+
+    .footer button {
+      padding: 12px 30px;
+      background-color: white;
+      color: #001e5a;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .footer button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .footer .contact-info {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .footer .scroll-top {
+      margin-top: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      display: inline-block;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .footer .scroll-top:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer .copyright {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #cccccc;
+    }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #001e5a;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-text-box h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text-box p {
+    font-size: 1rem;
+  }
+}

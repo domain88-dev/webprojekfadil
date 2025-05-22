@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - CoreLink</title>
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">CoreLink</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="wcu.html">Why Choose Us</a></li>
+      <li><a href="index.html#layanankami">Layanan Kami</a></li>
+      <li><a href="industri.html">Industries</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">Tentang Kami</a>
+      </li>
+      <li><a href="index.html#hubungi-kami">Hubungi Kami</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero Blog -->
+<section class="hero hero-blog">
+  <div class="overlay"></div>
+  <div class="hero-text-box">
+    <h1>Blog CoreLink</h1>
+    <p>Artikel, berita, dan tips menarik seputar teknologi dan jaringan internet</p>
+  </div>
+</section>
+
+
+  <!-- Konten Blog -->
+  <section class="after-hero">
+    <div class="blog-container">
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img src="https://awsimages.detik.net.id/community/media/visual/2018/05/12/35efc39f-4acf-45a9-88c4-c32c803f14c0.jpeg?w=700&q=90" alt="Artikel 1">
+          <h3>Cara Meningkatkan Kecepatan Jaringan</h3>
+          <p>Pelajari tips praktis dan teknis agar jaringan rumah atau kantor kamu berjalan lebih optimal.</p>
+          <a href="artikel1.html" class="cta-button">Baca Selengkapnya</a>
+        </article>
+
+        <article class="blog-card">
+          <img src="https://media.istockphoto.com/photos/network-servers-racks-picture-id494639902?k=20&m=494639902&s=170667a&w=0&h=VcOnUJIvsu2AZi8GHxtOki5--_yJH8shCyamjPjjAgw=" alt="Artikel 2">
+          <h3>Mengenal Perangkat Server Dasar</h3>
+          <p>Kenali jenis dan fungsi perangkat server untuk kebutuhan bisnis skala kecil hingga besar.</p>
+          <a href="artikel2.html" class="cta-button">Baca Selengkapnya</a>
+        </article>
+
+        <article class="blog-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.yNHQnFZpmAoIxPylc3CkDQHaFv?rs=1&pid=ImgDetMain" alt="Artikel 3">
+          <h3>Cybersecurity untuk Pemula</h3>
+          <p>Langkah awal yang bisa kamu lakukan untuk melindungi data dari ancaman dunia maya.</p>
+          <a href="#" class="cta-button">Baca Selengkapnya</a>
+        </article>
+        <article class="blog-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.yNHQnFZpmAoIxPylc3CkDQHaFv?rs=1&pid=ImgDetMain" alt="Artikel 3">
+          <h3>Cybersecurity untuk Pemula</h3>
+          <p>Langkah awal yang bisa kamu lakukan untuk melindungi data dari ancaman dunia maya.</p>
+          <a href="#" class="cta-button">Baca Selengkapnya</a>
+        </article>
+        <article class="blog-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.yNHQnFZpmAoIxPylc3CkDQHaFv?rs=1&pid=ImgDetMain" alt="Artikel 3">
+          <h3>Cybersecurity untuk Pemula</h3>
+          <p>Langkah awal yang bisa kamu lakukan untuk melindungi data dari ancaman dunia maya.</p>
+          <a href="#" class="cta-button">Baca Selengkapnya</a>
+        </article>
+        <article class="blog-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.yNHQnFZpmAoIxPylc3CkDQHaFv?rs=1&pid=ImgDetMain" alt="Artikel 3">
+          <h3>Cybersecurity untuk Pemula</h3>
+          <p>Langkah awal yang bisa kamu lakukan untuk melindungi data dari ancaman dunia maya.</p>
+          <a href="#" class="cta-button">Baca Selengkapnya</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer Contact Us -->
+<footer class="footer" id="hubungi-kami">
+  <div class="footer-container">
+    <h2>Hubungi Kami</h2>
+    <form id="contactForm">
+      <div class="form-row">
+        <input type="text" id="firstName" placeholder="First Name*" required>
+        <input type="text" id="lastName" placeholder="Last Name*" required>
+      </div>
+      <input type="email" id="email" placeholder="Email*" required>
+      <textarea id="message" placeholder="Message" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Alamat:</strong> Jl. Purwodadi No.Kelurahan, Sidomulyo Bar., Kec. Tuah, Kota Pekanbaru, Riau 28294</p>
+      <p><strong>Email:</strong> fadilmuhammad200808@gmail.com</p>
+      <p><strong>Tel:</strong> 088742561603</p>
+    </div>
+
+    <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+      &#x25B2;
+    </div>
+
+    <div class="copyright">
+      &copy; 2025 Corelink Networks. Developed by Fadil Muhammad. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+  <script>
+    // Toggle Navbar
+    document.querySelector('.menu-toggle').onclick = () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    };
+
+    // Scroll Reveal
+    window.addEventListener("scroll", function () {
+      document.querySelectorAll(".reveal").forEach((el) => {
+        const top = el.getBoundingClientRect().top;
+        const winHeight = window.innerHeight;
+        if (top < winHeight - 100) {
+          el.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+</body>
+
+<!-- Script untuk Contact Form (Simpan ke localStorage) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+
+    if (form) {
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!firstName || !lastName || !email) {
+          alert("Mohon lengkapi semua field yang wajib diisi.");
+          return;
+        }
+
+        const contactData = {
+          firstName,
+          lastName,
+          email,
+          message,
+          time: new Date().toISOString()
+        };
+
+        let submissions = JSON.parse(localStorage.getItem("contactSubmissions")) || [];
+        submissions.push(contactData);
+        localStorage.setItem("contactSubmissions", JSON.stringify(submissions));
+
+        alert("Pesan berhasil dikirim. Terima kasih!");
+        form.reset();
+      });
+    }
+  });
+  
+</script>
+
+</html>

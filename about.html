@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Kami - CoreLink</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">CoreLink</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="wcu.html">Why Choose Us</a></li>
+      <li><a href="index.html#layanankami">Layanan Kami</a></li>
+      <li><a href="industri.html">Industries</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">Tentang Kami</a>
+      </li>
+      <li><a href="index.html#hubungi-kami">Hubungi Kami</a></li>
+    </ul>
+  </nav>
+  
+  <section class="about-hero">
+<section class="about-hero">
+
+    <!-- isi konten -->
+  <div class="container">
+    <h1>Tentang CoreLink</h1>
+    <p>Kami adalah mitra jaringan terpercaya untuk solusi internet, server, dan layanan jaringan perusahaan.</p>
+  </div>
+</section>
+
+<section class="about-content">
+  <div class="container">
+    <h2>Siapa Kami?</h2>
+    <p>CoreLink adalah perusahaan yang bergerak di bidang teknologi informasi dengan fokus pada layanan jaringan, internet service provider (ISP), dan solusi data center.</p>
+    <p>Kami hadir untuk membantu bisnis dan institusi dalam mengoptimalkan infrastruktur digital mereka.</p>
+
+    <h2>Visi Kami</h2>
+    <p>Menjadi penyedia layanan jaringan terdepan yang dapat diandalkan dalam membangun konektivitas digital di seluruh Indonesia.</p>
+
+    <h2>Misi Kami</h2>
+    <ul>
+      <li>Menyediakan layanan berkualitas tinggi yang stabil dan aman.</li>
+      <li>Mengembangkan inovasi jaringan yang relevan dan berkelanjutan.</li>
+      <li>Memberikan dukungan teknis terbaik untuk semua klien.</li>
+    </ul>
+  </div>
+</section>
+
+  </section>  <footer class="footer" id="hubungi-kami">
+    <div class="footer-container">
+      <h2>Hubungi Kami</h2>
+      <form id="contactForm">
+        <div class="form-row">
+          <input type="text" id="firstName" placeholder="First Name*" required>
+          <input type="text" id="lastName" placeholder="Last Name*" required>
+        </div>
+        <input type="email" id="email" placeholder="Email*" required>
+        <textarea id="message" placeholder="Message" rows="4"></textarea>
+        <button type="submit">Submit</button>
+      </form><div class="contact-info">
+    <p><strong>Alamat:</strong> Jl. Purwodadi No.Kelurahan, Sidomulyo Bar., Kec. Tuah, Kota Pekanbaru, Riau 28294</p>
+    <p><strong>Email:</strong> fadilmuhammad200808@gmail.com</p>
+    <p><strong>Tel:</strong> 088742561603</p>
+  </div>
+
+  <div class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ▲
+  </div>
+
+  <div class="copyright">
+    &copy; 2025 Corelink Networks. Developed by Fadil Muhammad. All rights reserved.
+  </div>
+</div>
+
+<!-- Script untuk Navigasi -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+  
+</body>
+</html>

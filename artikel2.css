@@ -1,0 +1,210 @@
+  /* Reset & Font */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #001e5a;
+    }
+
+  
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* ganti ke center kalau mau logo di tengah */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* atau ganti sesuai tema */
+  border-bottom: 1px solid #ccc;
+}
+
+/* Logo tampilan */
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  color: #001e5a;
+  padding: 8px 15px;
+  border: 2px solid #001e5a;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.logo:hover {
+  background-color: #001e5a;
+  color: white;
+  transform: scale(1.05);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* atau flex-start jika ingin rata kiri */
+  padding: 10px 20px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #444;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+
+
+/* Container blog */
+.after-hero {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Card artikel */
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  padding: 30px;
+}
+
+/* Gambar */
+.blog-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/* Judul artikel */
+.blog-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007acc;
+}
+
+/* Paragraf */
+.blog-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* List ordered */
+.blog-card ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* List items */
+.blog-card ol li {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+/* Strong di dalam list untuk highlight */
+.blog-card ol li strong {
+  color: #004a99;
+  font-weight: 600;
+}
+
+/* Call to action button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007acc;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005fa3;
+  cursor: pointer;
+}
+
+    /* foot contact us */
+    .footer {
+      background-color: #001e5a;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer h2 {
+      margin-bottom: 30px;
+    }
+
+    .footer form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+
+    .footer .form-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer input,
+    .footer textarea {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+    }
+
+    .footer button {
+      padding: 12px 30px;
+      background-color: white;
+      color: #001e5a;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .footer button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .footer .contact-info {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .footer .scroll-top {
+      margin-top: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      display: inline-block;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .footer .scroll-top:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer .copyright {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #cccccc;
+    }

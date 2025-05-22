@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  border-bottom: 3px solid #001e5a;
+  box-shadow: 0 2px 6px rgba(0, 30, 90, 0.1); /* shadow halus */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 24px; /* agak lebih besar */
+  text-decoration: none;
+  color: #001e5a; /* biru tua */
+  padding: 8px 15px;
+  border: 2px solid #001e5a;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.logo:hover {
+  background-color: #001e5a;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Nav Links Container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* lebih renggang */
+}
+
+/* Nav Links Item */
+.nav-links li {
+  list-style: none;
+}
+
+/* Nav Links Anchor */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #001e5a;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 5px;
+  transition: color 0.3s;
+}
+
+/* Border bottom animasi pada hover */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #001e5a;
+  transition: width 0.3s ease;
+  border-radius: 3px;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Menu toggle untuk mobile */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #001e5a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #ff0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Perbaiki gap dan ukuran font */
+  .nav-links a {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+    /* Hero */
+    .hero {
+      height: 400px;
+      background-image: url('https://www.idmedu.lk/images/coursetopbanners/hnd-computer-networking.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      color: #001e5a;
+      font-weight: 600;
+    }
+
+    /* Reason section */
+    .why-corelink {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    .reason {
+      margin-bottom: 2rem;
+    }
+
+    .reason h2 {
+      font-weight: 600;
+      color: #4a4a4a;
+      margin-bottom: 0.5rem;
+    }
+
+    .reason p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .social-sidebar a:hover {
+      color: #ff0000;
+    }
+
+      /* foot contact us */
+    .footer {
+      background-color: #001e5a;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .footer h2 {
+      margin-bottom: 30px;
+    }
+
+    .footer form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+
+    .footer .form-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer input,
+    .footer textarea {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+    }
+
+    .footer button {
+      padding: 12px 30px;
+      background-color: white;
+      color: #001e5a;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .footer button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .footer .contact-info {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .footer .scroll-top {
+      margin-top: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      display: inline-block;
+      color: white;
+      transition: transform 0.3s;
+    }
+
+    .footer .scroll-top:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer .copyright {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #cccccc;
+    }
